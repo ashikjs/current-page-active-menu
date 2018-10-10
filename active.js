@@ -10,13 +10,14 @@ $(function() {
 /* here's the code if u want to use plain javascript
 
 function setActive() {
-  aObj = document.getElementById('nav').getElementsByTagName('a');
-  for(i=0;i<aObj.length;i++) { 
-    if(document.location.href.indexOf(aObj[i].href)>=0) {
-      aObj[i].className='active';
+        aObj = document.getElementById('menuID').getElementsByTagName('a');
+        for(i=0;i<aObj.length;i++) {
+            if( document.location.href == aObj[i].href) {
+                aObj[i].className='active';
+               // console.log('active')
+            }
+        }
     }
-  }
-}
 
 window.onload = setActive;
 
