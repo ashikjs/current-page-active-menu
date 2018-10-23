@@ -1,3 +1,6 @@
+    let  url = window.location.href;
+    $('.nav li a[href="'+url+'"]').addClass('active');
+/*
 $(function() {
      var pgurl = window.location.href.substr(window.location.href
 .lastIndexOf("/")+1);
@@ -6,7 +9,7 @@ $(function() {
           $(this).addClass("active");
      })
 });
-
+*/
 /* here's the code if u want to use plain javascript
 
 function setActive() {
